@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v2.3.4
+      uses: actions/checkout@v4
       with:
         ref: main
     - name: Zip files
       run: 'zip -r CCVanillaUI-${{ github.event.release.tag_name }}.zip z_cosmetics/'
     - name: Upload zip to release
-      uses: AButler/upload-release-assets@v2.0
+      uses: AButler/upload-release-assets@v3
       with:
         files: 'CCVanillaUI-${{ github.event.release.tag_name }}.zip'
         repo-token: '${{ secrets.GITHUB_TOKEN }}'
