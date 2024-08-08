@@ -1,33 +1,38 @@
 # CCVanillaUI
 
-This is a small add-on that focuses on replacing the default [CosmeticsCore][cc] GUIs and icons with more vanilla-like ones.
+This project aims at changing the textures used by [CosmeticsCore] to be more vanilla-like in their appearances, wherever possible.
 
-It currently changes the following assets:
+The pack currently affects the following assets:
 
-- Wardrobe GUI
-  - This also includes the buttons for hat, body and balloon cosmetic types
-- Customization GUI
-- Cursor Icons
+- GUI:
+    - Main Wardrobe GUI
+    - Color select GUI
+    - Cosmetic Buttons
+    - Color select Icon
+- Wardrobe Tutorial Screen
+- Cursors
+    - Pointer (Hand)
+    - Scroll (Arrows)
 
-## How to install
+## Installation
 
-You can download the zip file from the [latest available download][releases].  
-It will contain a folder called `z_cosmetics`.
-
-Extract this folder and put it into the same location where you extracted the assets when you first installed CosmeticsCore on your server.  
-You will be asked if you want to override existing files. Confirm this action.
-
-Finally, update your resource pack and re-apply it to all people (How you do this depends on how the resource pack is created and managed).
+1. Download the latest available Zip file from the [Releases Tab][releases].
+2. Extract the Assets.
+3. Move the files from `z_cosmetics` into the `z_cosmetics` folder of where you're hosting the CosmeticsCore assets.
+    - ItemsAdder: `/plugins/ItemsAdder/contents/cosmetics/resourcepack/assets/z_cosmetics/`
+    - Anything else: Check for the `z_cosmetics` folder.
+4. You may get asked if you want to override the existing files. Confirm this.
+5. Update your resource pack. This depends on how it gets generated.
 
 ## Previews
 
-![preview_wardrobe]
-![preview_customization]
+![wardrobe_tutorial](.github/assets/wardrobe_tutorial.png "The Wardrobe Tutorial")
+![wardrobe_tutorial_skip_checked](.github/assets/wardrobe_tutorial_skip_checked.png "The Wardrobe Tutorial with the Skip button checked")
+![cursor_pointer](.github/assets/cursor_pointer.png "The Cursor in its Pointer (Hand) form")
+![cursor_scroll](.github/assets/cursor_scroll.png "The Cursor in its Scroll (Arrows) form")
+![cosmetic_select](.github/assets/cosmetic_select.png "The Cosmetics Selection screen")
+![color_select](.github/assets/color_select.png "The Color Selection screen")
 
 <!-- Links -->
-[cc]: https://www.spigotmc.org/resources/105324/
+[CosmeticsCore]: https://www.spigotmc.org/resources/105324/
 [releases]: https://github.com/Andre601/CCVanillaUI/releases/_latest
-
-
-[preview_wardrobe]: https://raw.githubusercontent.com/Andre601/CCVanillaUI/main/.github/assets/preview_wardrobe.png "Preview of the vanilla-themed wardrobe GUI for the CosmeticsCore plugin"
-[preview_customization]: https://raw.githubusercontent.com/Andre601/CCVanillaUI/main/.github/assets/preview_customization.png "Preview of the vanilla-themed customization GUI for the CosmeticsCore plugin"
